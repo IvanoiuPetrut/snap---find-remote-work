@@ -1,0 +1,276 @@
+/* BELOW 1552PX*/
+@media (max-width: 97em) {
+  .hero-section {
+    max-width: 140rem;
+  }
+}
+
+/* BELOW  1264PX*/
+@media (max-width: 79em) {
+  .heading-primary {
+    font-size: 8rem;
+  }
+
+  .heading-secondary {
+    font-size: 4rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.8rem;
+  }
+}
+
+/* BELOW 1168PX */
+@media (max-width: 73em) {
+  .heading-primary {
+    font-size: 6.4rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.6rem;
+  }
+
+  .hero-section__description {
+    font-size: 1.8rem;
+  }
+
+  .grid--4-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .steps__step {
+    width: 65%;
+    justify-self: center;
+  }
+
+  .job-listing__job {
+    width: 100%;
+  }
+}
+
+/* BELOW 1032PX */
+@media (max-width: 65em) {
+  /* .hero-section {
+    grid-template-columns: 2fr 1fr;
+  } */
+
+  html {
+    font-size: 56.25%;
+  }
+
+  .logo--main {
+    margin-right: 2.4rem;
+  }
+
+  .hero-section__feature-in {
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+
+  .flex-break {
+    flex-basis: 100%;
+    height: 0;
+  }
+
+  .tag-list__item {
+    font-size: 1rem;
+  }
+
+  .company__name {
+    font-size: 1.4rem;
+  }
+
+  .company__job-time-post {
+    font-size: 1.2rem;
+  }
+}
+
+/* BELOW 900PX */
+@media (max-width: 57em) {
+  .heading-tertiary {
+    font-size: 1.4rem;
+  }
+
+  .header__nav {
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  /* mobile nav */
+  .icon--nav[name="menu-outline"] {
+    display: block;
+  }
+
+  .header__nav {
+    background-color: hsl(0, 0%, 100%);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    align-items: flex-start;
+    /* gap: 4.8rem; */
+    padding: 3.2rem;
+
+    /* hide */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .header {
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: hsla(0, 0%, 0%, 0.7);
+
+    /* hide */
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  /* NAV OPENNING CLASS */
+  .nav--open.header::before,
+  .nav--open .header__nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+
+  .nav__menu {
+    flex-direction: column;
+    margin-top: 6.4rem;
+  }
+
+  .header__user-auth {
+    flex-direction: column;
+  }
+
+  .btn--auth {
+    background-color: hsl(0, 0%, 100%);
+  }
+
+  /* DROPDOWN FOR MOBILE IN NAV */
+
+  .header__nav li:hover .nav__sub-menu {
+    position: static;
+    /* to appear and behave like a display block */
+  }
+
+  /* MOVE OVER THE MOBILE NAV */
+  .btn--nav {
+    position: absolute;
+    right: 3.2rem;
+  }
+}
+
+/* BELLOW 800px */
+@media (max-width: 50em) {
+  .heading-primary {
+    text-align: center;
+    font-size: 7.2rem;
+    line-height: 1.3;
+  }
+
+  .heading-secondary {
+    font-size: 3.2rem;
+  }
+
+  .grid--3-col {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-section__image {
+    grid-row-start: 1;
+    width: 80%;
+    place-self: center;
+  }
+
+  .hero--img {
+    content: url("../images/image-hero-mobile.png");
+  }
+
+  .hero-section__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-section__description {
+    text-align: center;
+  }
+
+  .link--full {
+    margin: 0 auto;
+  }
+
+  .flex-break {
+    flex-basis: 0;
+  }
+
+  .steps__step {
+    width: 100%;
+  }
+
+  .job-listing__job {
+    place-self: center;
+    width: 80%;
+  }
+
+  .job-listing__job:last-child {
+    grid-column: 1 / -1;
+    width: 40%;
+  }
+
+  .footer-section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer__row-3 {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .footer__form input {
+    width: 60%;
+  }
+
+  .btn--footer {
+    display: block;
+  }
+}
+
+/* BELLOW 580px */
+@media (max-width: 37em) {
+  .grid--3-col {
+    grid-template-columns: 1fr;
+  }
+
+  .job-listing__job {
+    width: 90%;
+  }
+
+  .job-listing__job:last-child {
+    width: 90%;
+  }
+
+  .grid--4-col {
+    grid-template-columns: 1fr;
+    gap: 3.2rem;
+  }
+}
